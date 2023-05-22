@@ -190,7 +190,7 @@ For a list of supported IDEs and more details, see the "Exporting to IDEs" secti
 
    **Figure 1. Terminal prints using semaphore**
 
-   ![](images/terminal-with-sema.png)
+   ![](images/with-sema.png)
 
 6. Set the `#define ENABLE_SEMA` to *0u* in the *shared/include/ipc_def.h* file at line 41. Recompile the project and program it into the PSoC&trade; 6 MCU device. The red LED on the board should turn on, indicating that the semaphore is not used in the application.
 
@@ -198,7 +198,7 @@ For a list of supported IDEs and more details, see the "Exporting to IDEs" secti
 
    **Figure 2. Terminal prints without semaphore**
 
-   ![](images/terminal-without-sema.png)
+   ![](images/without-sema.png)
 
    **Note:** Initially the customized configuration files like - *design.cyqspi, design.cycapsense, design.modus* are present in the folder *templates/TARGET_< BSP-NAME >/config* and are copied automatically from this folder to *bsps/TARGET_< BSP-NAME >/config* during the library updates. The build system reads all these configurations from the *bsps/TARGET_< BSP-NAME >/config*.
 
